@@ -1,0 +1,41 @@
+.productBrand.brandName {
+  font-size: 15px;
+  font-weight: normal;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 265px;
+  display: block;
+}
+
+.priceContainer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.nameContainer {
+  height: 20px;
+  display: flex;
+  padding: 5px 0px;
+  margin-bottom: 10px;
+}
+
+.productContainer.nameWrapper {
+  height: 40px;
+}
+
+
+
+.buyButton:hover{
+    color: #fff;
+    background-color: #2A2A2A;
+
+}
+
+.productBrandName {
+    color: #C2C2C2;
+    font-size: small;
+    font-weight:400;
+}
+

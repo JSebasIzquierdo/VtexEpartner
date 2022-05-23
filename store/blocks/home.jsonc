@@ -1,0 +1,158 @@
+{
+  "store.home": {
+    "blocks": ["tab-layout"]
+  },
+
+  "tab-layout": {
+    "children": ["tab-list", "tab-content"]
+  },
+
+  "tab-list": {
+    "children": [
+      "tab-list.item#1",
+      "tab-list.item#2",
+      "tab-list.item#3",
+      "tab-list.item#4",
+      "tab-list.item#5"
+    ]
+  },
+
+  "tab-content": {
+    "children": [
+      "tab-content.item#1",
+      "tab-content.item#2",
+      "tab-content.item#3",
+      "tab-content.item#4",
+      "tab-content.item#5"
+    ]
+  },
+
+  "tab-list.item#1": {
+    "props": {
+      "tabId": "teniscasuales",
+      "label": "TENIS CASUALES",
+      "defaultActiveTab": true
+    }
+  },
+
+  "tab-list.item#2": {
+    "props": {
+      "tabId": "sandalias",
+      "label": "SANDALIAS"
+    }
+  },
+  "tab-list.item#3": {
+    "props": {
+      "tabId": "zapatosformales",
+      "label": "ZAPATOS FORMALES"
+    }
+  },
+
+  "tab-list.item#4": {
+    "props": {
+      "tabId": "botas",
+      "label": "BOTAS"
+    }
+  },
+  "tab-list.item#5": {
+    "props": {
+      "tabId": "tenisdeportivos",
+      "label": "TENIS DEPORTIVOS"
+    }
+  },
+  "tab-content.item#1": {
+    "children": ["flex-layout.row#id"],
+    "props": {
+      "tabId": "teniscasuales"
+    }
+  },
+  "tab-content.item#2": {
+    "children": ["flex-layout.row#id"],
+    "props": {
+      "tabId": "sandalias"
+    }
+  },
+  "tab-content.item#3": {
+    "children": ["flex-layout.row#id"],
+    "props": {
+      "tabId": "zapatosformales"
+    }
+  },
+  "tab-content.item#4": {
+    "children": ["flex-layout.row#id"],
+    "props": {
+      "tabId": "botas"
+    }
+  },
+  "tab-content.item#5": {
+    "children": ["flex-layout.row#id"],
+    "props": {
+      "tabId": "tenisdeportivos"
+    }
+  },
+
+  "flex-layout.row#id": {
+    "children": ["flex-layout.col#id"],
+    "props": {}
+  },
+
+  "flex-layout.col#id": {
+    "children": ["list-context.product-list#id"],
+    "props": {
+      "width": "100%"
+    }
+  },
+  
+  "list-context.product-list#id": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#shelf"]
+  },
+
+  "product-summary.shelf": {
+    "children": [
+      "product-images",
+      "product-summary-name",
+      "product-summary-brand",
+      "product-price",
+      "product-summary-buy-button"
+    ]
+  },
+
+  "slider-layout#shelf": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 3,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "showPaginationDots": "mobileOnly"
+    }
+  },
+
+  "product-images": {
+    "props": {
+      "displayThumbnailsArrows": true
+    }
+  },
+  "product-price": {
+    "props": {
+      "showInstallments": false,
+      "showDiscountValue": true,
+      "showListPrice": true,
+      "showSavings": false,
+      "labelSellingPrice": null
+      
+    }
+  },
+  "product-summary-buy-button": {
+    "props": {
+      "buyButtonText": "Agregar Producto"
+      
+      
+      
+    }
+
+  }
+}

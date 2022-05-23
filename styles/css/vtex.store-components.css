@@ -1,0 +1,31 @@
+.sellingPriceContainer{
+    height: 50px;
+}
+
+.price_sellingPriceContainer{
+    height: 50px;
+}
+
+.priceContainer{
+    height: 50px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    
+}
+
+.sellingPrice {
+    font-size: larger;
+    text-align: left;
+    padding: 0;
+}
+
+.caretIcon:disabled {
+    color: #979899;
+}
+
+
+.caretIcon {
+    color: #C8222F;
+}

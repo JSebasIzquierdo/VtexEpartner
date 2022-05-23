@@ -1,0 +1,27 @@
+.slideChildrenContainer {
+  margin: 0px 0px;
+  padding: 0px 10px;
+  
+}
+
+.slideChildrenContainer:hover {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.sliderLayoutContainer{
+    height: 600px;
+}
+
+.sliderLayoutContainer :global(.vtex-button) {
+  background-color: #fff;
+  border: 1px solid #343434;
+  border-radius: 4px;
+  color: #4e4e4e;
+}
+
+.sliderLayoutContainer :global(.vtex-button):hover {
+  background-color: #4e4e4e;
+  border: 1px solid #4e4e4e;
+  border-radius: 4px;
+  color: #fff;
+}
